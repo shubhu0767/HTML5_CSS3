@@ -1,0 +1,532 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Overpass&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+
+}
+
+    /* Button Class */
+
+.btn{
+    padding: .8rem;
+    padding-left: 1.4rem;
+    padding-right: 1.5rem;
+    color: #183b56;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid #183b56;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+.btn:hover{
+    color: #2294ed;
+    border-color: #2294ed;
+    cursor: pointer;
+}
+
+
+    /* top header */
+.top-header{
+    padding: 1rem;
+    background: #e74694;
+    background-image: url(./assest/asset\ 32.png);
+    background-repeat: repeat;
+    background-size: 18.75rem;
+    background-position: center;
+    overflow: visible;
+}
+
+.top-header .container a p{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Overpass', sans-serif;
+}
+
+    /* header Navigation Bar */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 0 11rem;
+}
+
+header .logo .img-logo {
+    height: 2rem;
+}
+
+header .menu ul {
+    display: flex;
+    margin-right: 13.75rem;
+}
+
+header .menu ul li{
+    list-style-type: none;
+    padding: .6rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+}
+header .menu ul li .nav:hover{
+    color: #0b73c3;
+    transition: 0.2s ease-out;
+
+}
+a{
+    color: rgb(130, 116, 116);
+    text-decoration: none;
+}
+header .menu ul .sign-in{
+    font-weight: 600;
+    color: rgb(86, 109, 129);
+    border: 1px solid rgb(145, 123, 123);
+    border-radius: 4px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: 0.75rem;
+}
+
+header .menu ul li:nth-child(6){
+    font-weight: 600;
+    background: #2294ed;
+    margin-left: 1rem;
+    border-radius: 4px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: white !important;
+    border: 1px solid rgb(145, 123, 123);
+}
+
+header .menu ul li:nth-child(6):hover{
+    background: #0b73c3;
+    transition: 0.2s ease-out;
+}
+#sign-in:hover{
+    color: #0b73c3;
+    transition: 0.2s ease-out;
+}
+
+.sign-in:hover{
+    border-color: #0b73c3;
+}
+
+    /* Home Section */
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 11.0625rem;
+    margin-left: 11rem;
+    margin-top: 3rem;
+}
+.home .home-text h1 {
+    font-size: 3rem;
+    color: #183b56;
+    font-family: 'Overpass', sans-serif;
+    margin-top: 5.6875rem;
+    margin-bottom: .6rem;
+}
+
+.home .home-text h3 {
+    font-size: 1.3rem;
+    font-family: 'Overpass', sans-serif;
+    color: #577592;
+    font-weight: normal;
+    width: 28.75rem;
+    margin-bottom: 2rem;
+}
+
+.home button {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    background-color: #2294ed;
+    border-radius: none !important;
+    color: whitesmoke;
+}
+
+.home button:hover {
+    background-color: #0061ad;
+    cursor: pointer;
+}
+
+.home .img-main img{
+    height: 26.75rem;
+    width: 33.1875rem;
+    margin-left: 6.625rem;
+}
+
+    /* Company Section */
+
+
+.companies{
+    margin-top: 3rem;
+}
+
+.companies h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #183b56;
+    font-weight: normal;
+    
+}
+
+.companies .customer-logo {
+    display: flex;
+    height: 2.8125rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 11.0625rem;
+    margin-left: 11rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.7rem;
+}
+
+    /* Features Section */
+
+.feature-section {
+    background-image: url(./assest/asset\ 34.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+.feature-section .feature {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.feature-section .feature h1{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #183b56;
+}
+
+
+    /* Card Section */
+
+.feature-section .card-container{
+    margin: 0 11.0625rem 0 18rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.feature-section .card-container .cards{
+    max-width: 30%;
+    gap: 1.25rem;
+    text-align: center;
+    margin: 2.5rem 0 1.2rem 0;
+}
+
+.feature-section .card-container .cards h1{
+    color: #333333;
+    margin-top: .6rem;
+}
+.feature-section .card-container .cards h3{
+    font-weight: normal;
+    color: #183b56;
+    margin: .6rem 0 1.2rem 0;
+}
+
+    /* Design Professional Section */
+
+.design{
+    display: flex;
+    margin: 5rem 11.0625rem 5rem 13rem;
+}
+
+.design .text{
+    margin-left: 2rem;
+}
+
+.design .text .heading{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #183b56;
+    margin-left: 1.8rem;
+}
+
+.design .text h1{
+    margin: .8rem 0 0 1.8rem;
+    font-size: 2rem;
+    color: #183b56;
+}
+.design .text h4{
+    color: #577592;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 1rem 5rem 1.2rem 1.8rem;
+}
+
+.design .text .logo{
+    margin: .6rem 0 0 1.8rem;
+    height:1.875rem;
+}
+
+.design .text .comment {
+    color: #183b56;
+    background-image: url(./assest/asset\ 35.png);
+    background-repeat: no-repeat;
+    font-size: 1.1rem;
+    padding: 1rem 0 0 2.2rem;
+    margin: .8rem 9.5rem 0 0;
+}
+
+.design .text .profile{
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.design .text .profile .profile-pic{
+    height: 2.8125rem;
+    margin-left: 1.8rem;
+}
+
+.design .text .profile .pic-text h3{
+    font-weight: normal;
+    color: #183b56;
+}
+
+
+    /* Platform-section */
+
+.platform-section .text{
+    text-align: center;
+    margin: 0 1rem 1.4rem 0;
+}
+.platform-section .text h1{
+    font-size: 2.5rem;
+    color: #183b56;
+    margin: 1.2rem 0;
+}
+
+.platform-section .container{
+    display: flex;
+    margin: 0 11rem;
+    justify-content: space-between;
+}
+
+.platform-section .container .cards{
+    height: 20.8125rem;
+    width: 17.375rem;
+    background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),url(./assest/asset\ 36.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s ease-out;
+}
+.platform-section .container .cards:nth-child(2){
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),url(./assest/asset\ 37.jpeg);
+    background-size: cover;
+}
+.platform-section .container .cards:nth-child(3){
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),url(./assest/asset\ 38.jpeg);
+    background-size: cover;
+
+}
+.platform-section .container .cards:nth-child(4){
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),url(./assest/asset\ 39.jpeg);
+    background-size: cover;
+
+}
+
+.platform-section .container .cards:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    cursor: pointer;
+}
+
+.platform-section .container .cards h3{
+    height: 5.375rem;
+    width: 14.75rem;
+    margin: 15rem 0 0 1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+    /* Participant Section */
+
+.participant-section{
+    margin-top: 8rem;
+    background-color: #183b54;
+    height: 83vh;
+    display: flex;
+}
+
+
+.participant-section .text {
+    margin-left: 11rem;
+    color: white;
+    width: 36rem;
+}
+
+.participant-section .text h1{
+    padding-top: 4.85rem;
+    font-size: 2.5rem;
+    margin-bottom: .8rem;
+}
+
+.participant-section .text h3{
+    color: #b9cde4;
+    font-weight: normal;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.participant-section .text p{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.participant-section .text ul{
+    display: flex;
+    flex-wrap: wrap;
+    color: #b9cde4;
+    margin: 0 0 2.8rem 1.1rem;
+}
+
+.participant-section .text ul .pt {
+    min-width: 15.62rem;
+    height: 2.125rem;
+    font-size: 1rem;
+}
+.participant-section .img{
+    height: 75vh;
+    width: 37.125rem;
+    margin: 1.8rem 11rem 0 0;
+}
+
+.participant-section .img{
+    background-image: url(./assest/asset\ 40.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+.participant-section .img .price {
+    height: 16.5625rem;
+    width: 17.25rem;
+    text-align: center;
+    margin: 20vh auto 0;
+    background-image: url(./assest/asset\ 41.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.participant-section .img .price p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #183b56;
+    margin-bottom: 1.2rem;
+    padding-top: 5.3rem;
+}
+
+.participant-section .img .price h1{
+    color: #8ba6c0;
+    margin-bottom: .7rem;
+}
+
+.participant-section .img .price h1 span{
+    color: #2294ed;
+    font-size: 1.8rem;
+    font-weight: 900
+}
+
+    /* Testing Section */
+
+.testing{
+    text-align: center;
+    margin: 5rem 11rem;
+}
+
+.testing h1{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #183b56;
+}
+
+.testing p {
+    color: #577592;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+    /* Footer Section */
+
+.main-footer{
+    background-color: #ebf2fa;
+    padding-bottom: 5rem;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 11rem;
+}
+
+.footer-section .footer-menu {
+    width: 16.625rem;
+    margin-top: 5rem;
+}
+
+.footer-section .footer-menu h3{
+    height: 1.8rem;
+    margin: .5rem 0 1rem;
+    color: #183b56;
+    font-weight: 600;
+}
+
+.footer-section .footer-menu ul {
+    list-style-type: none;
+}
+
+.footer-section .footer-menu ul .nav-footer {
+    color: #577592;
+    font-size: 1rem;
+    height: 1.8rem;
+}
+
+.footer-section .footer-menu ul .nav-footer:hover{
+    color: #2294ed;
+    cursor: pointer;
+}
+
+.sub-footer{
+    height: 4rem; 
+    background-color: #b9cde4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-footer .sm-icon{
+    margin-left: 6.5rem;
+}
+
+.sub-footer .sm p{
+    color: #183b56;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+.sub-footer .sm p:hover{
+    color: #2294ed;
+    cursor: pointer;
+}
+
+
+.sub-footer .sm-icon img{
+    height: 1.2rem;
+    margin-left: 1.5rem;
+}
