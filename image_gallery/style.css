@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.2rem;
+    background: #52c234;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 2rem;
+
+}
+
+.container .text{
+    flex-basis: 30%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.container .images{
+    flex-basis: 50%;
+    display: grid;
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+}
+
+.container .images .box{
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    background-color: #222;
+    background-blend-mode: overlay;
+    transition: all 1s ease-in-out;
+}
+
+.container .images .box:hover{
+    background-color: #999;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+    /* Utility classes */
+.row-2{
+    grid-row: span 2;
+}
+.col-2{
+    grid-column: span 2;
+}
+
+    /* Media Queries for Responsive Design */
+    
+
+@media screen and (max-width: 1024px){
+    .container {
+        flex-direction: column;
+    }
+
+    .container .images{
+        width: 100%;
+    }
+    
+    .box{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+}
+
+
+
+@media screen and (max-width: 690px) {
+    .container .images {
+        width: 100%;
+        grid-auto-rows: 250px;
+    }
+    
+    .box {
+        grid-column: span 3;
+    }
+}
