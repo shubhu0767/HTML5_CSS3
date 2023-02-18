@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account | Store</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <header style="text-align: center">
+      <div><img src="./img/logo.png" alt="logo" /></div>
+      <h1 style="margin-top: 2rem">Create An Account</h1>
+    </header>
+    <main>
+      <div class="container">
+        <nav>
+          <h1>Sign Up</h1>
+          <h4>it take only 30 Second</h4>
+        </nav>
+        <div class="form-body">
+          <form action="./index.html" onsubmit="return formValidation()">
+            <div>
+              <label class="required" for="Full Name">Full Name</label>
+              <input
+                type="text"
+                name="fullName"
+                placeholder="Full Name"
+                id="fullName"
+                autofocus
+              /> <p id="errmsgName"></p>
+            </div>
+            <div>
+              <label class="required" for="E-mail">Your E-mail</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your E-mail"
+                id="email"
+              /> <p id="errmsgEmail"></p>
+            </div>
+            <div>
+              <label class="required" for="Number">Your Phone Number</label>
+              <input
+                type="number"
+                name="number"
+                placeholder="Your Phone Number"
+                id="phoneNumber"
+              /> <p id="errmsgNumber"></p>
+            </div>
+            <div>
+              <label class="required" for="password">Your Password</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Your Password"
+                id="password"
+              /> <p id="errmsgPassword"></p>
+            </div>
+            <div>
+              <input
+                type="submit"
+                onclick="saveData()"
+                value="submit"
+                name="submit"
+                id="submit"
+              />
+            </div>
+          </form>
+        </div>
+        <footer>
+          <p>Already have an account <a href="#">Log In</a></p>
+        </footer>
+      </div>
+    </main>
+    <script src="./signup.js"></script>
+  </body>
+</html>

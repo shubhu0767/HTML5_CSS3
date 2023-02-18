@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .container {
+    backdrop-filter: blur(8px);
+    width: 30vw;
+    margin-top: 1rem;
+    padding: 2.2rem;
+    border-radius: 4px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+main .container nav {
+    margin-bottom: 1rem;
+}
+
+main .container nav h1 {
+    padding-bottom: .5rem;
+}
+
+main .container nav h4 {
+    color: #555;
+}
+
+main .container .form-body div {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+main .container .form-body div label {
+    display: block;
+    margin-bottom: .3rem;
+}
+
+main .container .form-body div input {
+    width: 100%;
+    padding: .6rem;
+    margin-bottom: .3rem;
+    border-radius: 3px;
+    border: 2px solid #ccc;
+}
+main .container .form-body div p{
+    color: red;
+    /* display: none; */
+}
+
+main .container .form-body div #submit {
+    margin-top: 1rem;
+    font-weight: 700;
+    border: none;
+    background: #fcbf49;
+}
+
+main .container .form-body div #submit:hover{
+    background: #dca307;
+}
+
+footer p {
+    color: #555;
+    text-align: center;
+}
+
+footer p a {
+    color: #2773a5
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
