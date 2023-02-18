@@ -10,3 +10,8 @@ this website is created for praticeing CSS - Flexbox property.
 https://majestic-pudding-fdd04b.netlify.app/
 
 Responsive image gallery for any device.
+
+## Store
+https://neon-truffle-9457d6.netlify.app/
+
+Responsive Store E-Commerce Home Page for any device.
